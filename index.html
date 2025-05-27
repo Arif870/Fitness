@@ -4,7 +4,55 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Fitness</title>
   </head>
-  <body></body>
+  <body>
+    <!-- Navbar section -->
+    <section class="menu">
+      <div class="content centerContent">
+        <div class="iconRes">
+          <a href="#">Fitness</a>
+
+          <!-- Hamburger icon -->
+          <div class="menu-toggle" id="menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+
+        <!-- Navigation links -->
+        <div class="pages">
+          <ul id="nav-list">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const toggle = document.getElementById("menu-toggle");
+      const navList = document.getElementById("nav-list");
+
+      toggle.addEventListener("click", () => {
+        navList.classList.toggle("active");
+      });
+
+      // Optional: Close menu after clicking a link
+      const links = document.querySelectorAll("#nav-list li a");
+      links.forEach(link => {
+        link.addEventListener("click", () => {
+          navList.classList.remove("active");
+        });
+      });
+    </script>
+  </body>
 </html>

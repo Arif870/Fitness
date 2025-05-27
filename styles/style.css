@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  outline: 0px;
+  font-family: "Inter", sans-serif;
+}
+:root {
+  --red: rgb(230, 83, 60);
+}
+
+.centerContent {
+  width: 80%;
+  margin: auto;
+  display: block;
+}
+.btn {
+  background-color: var(--red);
+  color: white;
+  padding: 10px 55px;
+  font-weight: 500;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+body {
+  background: rgb(0, 0, 0);
+}
+
+.menu .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+.menu .iconRes > a {
+  color: var(--red);
+  font-size: 40px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.pages ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border: 0.5px solid rgba(221, 221, 221, 0.31);
+  padding: 10px 6px;
+  border-radius: 20px;
+}
+
+.pages ul li a {
+  padding: 10px 20px;
+}
+.pages ul li a:hover {
+  background-color: var(--red);
+  padding: 6px 20px;
+  border-radius: 20px;
+}
+.pages ul li a.active {
+  background-color: var(--red);
+  padding: 6px 20px;
+  border-radius: 20px;
+}
+
+/* Hamburger menu icon */
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Responsive styles */
+@media (max-width: 556px) {
+  .menu .content {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 90%;
+  }
+
+  .menu-toggle {
+    display: block;
+    align-self: flex-end;
+  }
+  .menu-toggle i {
+    color: white;
+  }
+  .menu .content .iconRes {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .pages ul {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    margin-top: 20px;
+    border: none;
+  }
+
+  .pages ul.active {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .pages ul li {
+    width: 100%;
+    text-align: left;
+  }
+}
