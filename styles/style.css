@@ -293,4 +293,7 @@ body {
   .extraMile .extraMileContent .leftContent {
     width: 100%;
   }
+  .extraMile .extraMileContent .leftContent p {
+    width: 100%;
+  }
 }
