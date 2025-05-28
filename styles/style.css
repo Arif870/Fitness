@@ -183,6 +183,33 @@ body {
   margin: 0px auto 20px;
 }
 
+/* Extra mile section desing  */
+.extraMile .extraMileContent {
+  background-color: rgb(56, 56, 56);
+  border-radius: 20px;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.extraMile .extraMileContent .leftContent {
+  width: 50%;
+}
+.extraMile .extraMileContent .leftContent h1 {
+  font-size: 40px;
+}
+.extraMile .extraMileContent .leftContent p {
+  margin: 30px 0px;
+  width: 80%;
+}
+
+.extraMile .extraMileContent .rightContent img {
+  width: 500px;
+  border-radius: 20px;
+}
+
 /* Responsive styles */
 @media (max-width: 556px) {
   .menu .content {
@@ -259,5 +286,11 @@ body {
   }
   .changeHabit .changeHabitContent .images {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .extraMile .extraMileContent .rightContent img {
+    width: 100%;
+  }
+  .extraMile .extraMileContent .leftContent {
+    width: 100%;
   }
 }
