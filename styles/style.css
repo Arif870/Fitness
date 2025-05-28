@@ -147,6 +147,41 @@ body {
   top: 163px;
   right: -93px;
 }
+.changeHabit .changeHabitContent .textContent {
+  text-align: center;
+}
+.changeHabit .changeHabitContent .textContent h1 {
+  font-size: 35px;
+  text-transform: capitalize;
+}
+.changeHabit .changeHabitContent .textContent p {
+  margin: 20px auto 50px;
+  width: 80%;
+  text-align: center;
+  line-height: 30px;
+  color: gray;
+}
+.changeHabit .changeHabitContent .images {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+.changeHabit .changeHabitContent .images .item img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border: 5px solid white;
+}
+.changeHabit .changeHabitContent .images .item h3 {
+  margin: 20px 0px 5px;
+}
+.changeHabit .changeHabitContent .images .item p {
+  color: gray;
+  width: 80%;
+  margin: 0px auto 20px;
+}
 
 /* Responsive styles */
 @media (max-width: 556px) {
@@ -221,5 +256,8 @@ body {
   }
   .heroSection .heroContent .rightContent .trainer img {
     width: 100%;
+  }
+  .changeHabit .changeHabitContent .images {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
