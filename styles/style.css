@@ -296,4 +296,7 @@ body {
   .extraMile .extraMileContent .leftContent p {
     width: 100%;
   }
+  .extraMile .extraMileContent {
+    padding: 10px;
+  }
 }
